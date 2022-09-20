@@ -10,9 +10,17 @@ public class Alarm {
 		System.out.print("");
 		int H = sc.nextInt();
 		int M = sc.nextInt();
-		
-		if(H <= 0)
-			H = 23;
-			System.out.println(H + (M + 15));
+
+		if(M < 45) {
+			M += 15;
+			if(H > 0) {
+				H -=1;
+			}
+			else
+				H +=23;
+		}
+		else 
+			M -= 45;
+		System.out.println(H + " " + M);
 	}
 }
