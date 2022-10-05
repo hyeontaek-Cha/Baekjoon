@@ -15,15 +15,12 @@ public class Average {
 		double result = 0;
 		for (int i = 0; i < cnt; i++) {
 			score[i] = sc.nextInt();
-		}
-		for (int i = 0; i < score.length; i++) {
 			if (max < score[i]) {
 				max = score[i];
 			}
 			sum += score[i];
-
-			result = (sum / max * 100) / cnt;
 		}
+		result = (sum / max * 100) / cnt;
 		System.out.println(result);
 	}
 }
