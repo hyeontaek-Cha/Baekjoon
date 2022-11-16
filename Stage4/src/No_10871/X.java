@@ -9,11 +9,11 @@ public class X {
 
 		int n = sc.nextInt();
 		int x = sc.nextInt();
-		
-		String [] str = new String[n];
-		for(int i = 0; i < n; i++) {
+
+		String[] str = new String[n];
+		for (int i = 0; i < n; i++) {
 			str[i] = sc.next();
-			if(Integer.parseInt(str[i]) < x) {
+			if (Integer.parseInt(str[i]) < x) {
 				System.out.print(str[i] + " ");
 			}
 		}
